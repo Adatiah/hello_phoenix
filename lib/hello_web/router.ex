@@ -18,6 +18,10 @@ defmodule HelloWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/goodmorning", MorningController, :index
+   # get "/goodnight", GoodnightController, :index
+
+   live "/goodnight", GoodNightLive
   end
 
   # Other scopes may use custom stacks.
